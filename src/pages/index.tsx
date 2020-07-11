@@ -1,11 +1,10 @@
 import Head from 'next/head'
 
-type Props= {
+type Props = {
   title: string
 }
-const teste =  "legal";
 
-export default function Home({title="projeto incrivel"}: Props) {
+export default function Home({ title = 'Projeto mó dahora' }: Props) {
   return (
     <div className="container">
       <Head>

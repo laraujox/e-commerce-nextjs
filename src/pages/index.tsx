@@ -1,16 +1,21 @@
 import Head from 'next/head'
 
-export default function Home() {
+type Props= {
+  title: string
+}
+const teste =  "legal";
+
+export default function Home({title="projeto incrivel"}: Props) {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>{title}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to <a href="https://nextjs.org">{title}</a>
         </h1>
 
         <p className="description">
